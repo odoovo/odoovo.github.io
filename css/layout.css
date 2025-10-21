@@ -1,0 +1,35 @@
+#wrapwrap {
+    backface-visibility: hidden;
+}
+
+#wrapwrap:not(.o_fullscreen)>main {
+    position: relative;
+    height: auto;
+    white-space: normal;
+}
+
+#wrapwrap:not(.o_fullscreen)>main::before,
+#wrapwrap:not(.o_fullscreen)>main::after {
+    content: "";
+    display: table;
+}
+
+@media (max-width: 767.98px) {
+    #wrapwrap.o_fullscreen>footer#bottom {
+        display: none;
+    }
+}
+
+#wrapwrap>header+main> :not(#wrap):not(.o_wslides_fs_main),
+#wrapwrap>header+main>#wrap:not(.o_wblog_cover_post):not(.js_hr_recruitment)> :first-child {
+    border-top: 60px solid transparent !important;
+}
+
+#wrapwrap>header.o_inverted+main> :not(#wrap):not(.o_wslides_fs_main),
+#wrapwrap>header.o_inverted+main>#wrap:not(.o_wblog_cover_post):not(.js_hr_recruitment)> :first-child {
+    border-top: 60px solid transparent !important;
+}
+
+.o_wevent_index .navbar {
+    border-top: 60px solid transparent !important;
+}
