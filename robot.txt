@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /apps/series/
+Disallow: /web/login
+Disallow: /*?*
+
+Sitemap: https://odoovo.com/sitemap.xml
