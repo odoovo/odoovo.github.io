@@ -2,6 +2,5 @@ User-agent: *
 Disallow: /apps/series/
 Disallow: /web/login/
 Disallow: /livechat/
-Disallow: /*?*
 
 Sitemap: https://odoovo.com/sitemap.xml
