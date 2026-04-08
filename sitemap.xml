@@ -20,6 +20,11 @@
      <priority>1.0</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://odoovo.com/odoo20-roadmap</loc>
+     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
    <url>
     <loc>https://odoovo.com/download</loc>
      <priority>0.7</priority>
