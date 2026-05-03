@@ -42,6 +42,11 @@
     <link type="text/css" rel="stylesheet" href="../css/header.css">
     <link type="text/css" rel="stylesheet" href="../css/apps.css">
     <link type="text/css" rel="stylesheet" href="../css/footer.css">
+    <link type="text/css" rel="stylesheet" href="css/popup.css">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
 </head>
 
 <body class="">
@@ -315,6 +320,57 @@
                 </div>
             </div>
         </footer>
+        <div class="modal fade migration-modal" id="migrationModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Header -->
+                    <div class="migration-header">
+                        <button class="close-custom" data-bs-dismiss="modal">×</button>
+                        <div class="migration-logo">
+                            <img src="https://www.onvodo.com/web/image/website/1/logo/Onvodo%C2%AE?unique=d5f11ca" alt="ONVODO Logo">
+                        </div>
+                        <div class="migration-badge">
+                            🎉 LIMITED OFFER — 20% OFF
+                        </div>
+                        <div class="migration-title">
+                            We’ve moved to ONVODO
+                        </div>
+                        <div class="migration-subtitle">
+                            <div class="mb-2">
+                                ODOOVO is now officially available at
+                            </div>
+
+                            <a href="https://www.onvodo.com" target="_blank">www.onvodo.com</a>
+                        </div>
+                    </div>
+                    <!-- Body -->
+                    <div class="migration-body">
+                        <p class="text-muted mb-4">
+                            Thank you for supporting us during this migration.
+                            Visit our new platform and enjoy a special discount.
+                        </p>
+                        <div class="coupon-box">
+                            <div class="small text-muted mb-1">
+                                USE COUPON CODE
+                            </div>
+
+                            <div class="coupon-code">
+                                MOVE20
+                            </div>
+                        </div>
+                        <a href="https://www.onvodo.com" target="_blank"
+                        class="btn btn-onvodo w-100">
+                            Visit ONVODO
+                        </a>
+                        <a href="#" class="btn-skip" data-bs-dismiss="modal"> Maybe later</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="css/popup.js"></script>
     </div>
 </body>
 
