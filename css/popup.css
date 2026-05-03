@@ -1,0 +1,170 @@
+.migration-modal .modal-content {
+            border: 0;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+
+        .migration-header {
+            background: linear-gradient(135deg, #111111, #1f1f1f);
+            color: white;
+            padding: 42px 32px;
+            text-align: center;
+            position: relative;
+        }
+
+        .migration-badge {
+            display: inline-block;
+            background: #ffc107;
+            color: #000;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            margin-bottom: 18px;
+        }
+
+        .migration-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .migration-subtitle {
+            color: rgba(255,255,255,0.75);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .migration-body {
+            padding: 36px 32px;
+            text-align: center;
+        }
+
+        .coupon-box {
+            background: #f8f9fa;
+            border-radius: 14px;
+            padding: 14px;
+            margin-bottom: 24px;
+        }
+
+        .coupon-code {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .btn-onvodo {
+            background: #111;
+            color: white;
+            border-radius: 14px;
+            padding: 14px;
+            font-weight: 600;
+            border: 0;
+            transition: 0.2s ease;
+        }
+
+        .btn-onvodo:hover {
+            background: #000;
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .btn-skip {
+            color: #777;
+            text-decoration: none;
+            margin-top: 12px;
+            display: inline-block;
+        }
+
+        .btn-skip:hover {
+            color: #000;
+        }
+
+        .close-custom {
+            position: absolute;
+            top: 16px;
+            right: 18px;
+            background: transparent;
+            border: 0;
+            color: white;
+            font-size: 24px;
+            opacity: 0.7;
+        }
+
+        .close-custom:hover {
+            opacity: 1;
+        }
+        .migration-subtitle {
+            color: rgba(255, 255, 255, 0.78);
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 420px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        .migration-subtitle a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+
+            margin-top: 10px;
+            padding: 10px 16px;
+
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+
+            border-radius: 12px;
+
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+
+            backdrop-filter: blur(8px);
+
+            transition:
+                background 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .migration-subtitle a:hover {
+            background: rgba(255,255,255,0.14);
+            border-color: rgba(255,255,255,0.24);
+
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+
+        .migration-subtitle a::after {
+            content: "↗";
+            font-size: 13px;
+            opacity: 0.7;
+        }
+        .migration-logo {
+            margin-bottom: 24px;
+        }
+
+        .migration-logo img {
+            height: 42px;
+            width: auto;
+
+            object-fit: contain;
+
+            filter:
+                brightness(0)
+                invert(1);
+
+            opacity: 0.96;
+
+            transition:
+                transform 0.25s ease,
+                opacity 0.25s ease;
+        }
+
+        .migration-logo img:hover {
+            transform: scale(1.02);
+            opacity: 1;
+        }
