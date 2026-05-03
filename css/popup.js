@@ -1,5 +1,7 @@
 window.addEventListener('load', function () {
+
     const waitBootstrap = setInterval(() => {
+
         if (typeof bootstrap === 'undefined') {
             return;
         }
@@ -13,14 +15,23 @@ window.addEventListener('load', function () {
             return;
         }
 
-        
+        modalElement.style.pointerEvents = 'none';
+
+        const modalDialog =
+            modalElement.querySelector('.modal-dialog');
+
+        if (modalDialog) {
+            modalDialog.style.pointerEvents = 'auto';
+        }
+
         let modal = createModal();
+
         let reopenTimer = null;
+
         setTimeout(() => {
             modal.show();
         }, 1200);
 
-        
         modalElement.addEventListener('shown.bs.modal', function () {
 
             document.body.classList.remove('modal-open');
@@ -39,11 +50,14 @@ window.addEventListener('load', function () {
 
         });
 
-       
         modalElement.addEventListener('hidden.bs.modal', function () {
+
             clearTimeout(reopenTimer);
+
             cleanupBackdrops();
+
             modal.dispose();
+
             reopenTimer = setTimeout(() => {
 
                 modal = createModal();
@@ -58,7 +72,8 @@ window.addEventListener('load', function () {
 
             return new bootstrap.Modal(modalElement, {
                 backdrop: false,
-                keyboard: true
+                keyboard: true,
+                focus: false
             });
 
         }
